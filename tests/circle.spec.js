@@ -41,6 +41,7 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
     let resultadoFuncao = circle(3);
     expect(parseInt(parseFloat(resultadoFuncao.area).toPrecision(2))).toBe(28);
     // Teste que a função retorna, num objeto, os dados corretos de um círculo de raio 3.
+    // Referência desse último teste: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/values
     expect(Object.values(circle(3))[0]).toBeCloseTo(3, 1);
     expect(Object.values(circle(3))[1]).toBeCloseTo(28.26, 1);
     expect(Object.values(circle(3))[2]).toBeCloseTo(18.84, 1);
