@@ -43,6 +43,7 @@ const calculator = (number1, number2) => {
   return operations;
 };
 
+// Referência ao Colega Sr.Tonn para refatorar função.
 const arrayGenerator = (type, object) => Object[type](object);
   // if (type === 'keys') {
   //   return (Object.keys(object));
