@@ -79,7 +79,6 @@
 // que percorre por todos os itens de `objetoRetornado.consumption`, soma o preço deles e retorna o valor somado acrescido de 10%.
 // DICA: para isso, você precisará percorrer tanto o objeto da chave `food` quanto o objeto da chave `drink`.
 
-
 // Referências: Sobre o uso do INCLUDES: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
 // Agradecimento ao Colega Lucas Lisboa pelo auxílio na criação da constante final no PASSO 4.
 let arrayCons = [];
@@ -91,7 +90,7 @@ const createMenu = (objeto) => {
     fetchMenu: () => objeto,
     consumption: arrayCons,
     order: addConsumption,
-    pay: (objeto) => {
+    pay: () => {
       let sum = 0;
       menu.consumption.forEach((comidas) => {
         if (Object.keys(menu.fetchMenu().food).includes(comidas)) {
@@ -106,6 +105,5 @@ const createMenu = (objeto) => {
   };
   return menu;
 };
-
 
 module.exports = createMenu;
